@@ -11,11 +11,16 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
+    String ankka = "";
     int nike = 0;
     int women = 0;
     int adidas = 0;
     int wantNike = 0;
     int wantAdidas = 0;
+    int us = 0;
+    int uk = 0;
+    int eu = 0;
+    int cm = 0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -217,56 +222,122 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+
+
         s1.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 if(position==0 && women==0 && nike==1){
                     s3.setAdapter(adapter3);
+                    us = 1;
+                    uk = 0;
+                    eu = 0;
+                    cm = 0;
                 }
                 if(position==1 && women==0 && nike==1){
                     s3.setAdapter(adapter5);
+                    us = 0;
+                    uk = 1;
+                    eu = 0;
+                    cm = 0;
                 }
                 if(position==2 && women==0 && nike==1){
                     s3.setAdapter(adapter4);
+                    us = 0;
+                    uk = 0;
+                    eu = 1;
+                    cm = 0;
                 }
                 if(position==3 && women==0 && nike==1){
                     s3.setAdapter(adapter6);
+                    us = 0;
+                    uk = 0;
+                    eu = 0;
+                    cm = 1;
                 }
                 if(position==0 && women==1 && nike==1){
                     s3.setAdapter(adapter7);
+                    us = 1;
+                    uk = 0;
+                    eu = 0;
+                    cm = 0;
                 }
                 if(position==1 && women==1 && nike==1){
                     s3.setAdapter(adapter8);
+                    us = 0;
+                    uk = 1;
+                    eu = 0;
+                    cm = 0;
                 }
                 if(position==2 && women==1 && nike==1){
                     s3.setAdapter(adapter9);
+                    us = 0;
+                    uk = 0;
+                    eu = 1;
+                    cm = 0;
                 }
                 if(position==3 && women==1 && nike==1){
                     s3.setAdapter(adapter10);
+                    us = 0;
+                    uk = 0;
+                    eu = 0;
+                    cm = 1;
                 }
                 if(position==0 && women==0 && adidas==1){
                     s3.setAdapter(adapter11);
+                    us = 1;
+                    uk = 0;
+                    eu = 0;
+                    cm = 0;
                 }
                 if(position==1 && women==0 && adidas==1){
                     s3.setAdapter(adapter12);
+                    us = 0;
+                    uk = 1;
+                    eu = 0;
+                    cm = 0;
                 }
                 if(position==2 && women==0 && adidas==1){
                     s3.setAdapter(adapter13);
+                    us = 0;
+                    uk = 0;
+                    eu = 1;
+                    cm = 0;
                 }
                 if(position==3 && women==0 && adidas==1){
                     s3.setAdapter(adapter14);
+                    us = 0;
+                    uk = 0;
+                    eu = 0;
+                    cm = 1;
                 }
                 if(position==0 && women==1 && adidas==1){
                     s3.setAdapter(adapter15);
+                    us = 1;
+                    uk = 0;
+                    eu = 0;
+                    cm = 0;
                 }
                 if(position==1 && women==1 && adidas==1){
                     s3.setAdapter(adapter16);
+                    us = 0;
+                    uk = 1;
+                    eu = 0;
+                    cm = 0;
                 }
                 if(position==2 && women==1 && adidas==1){
                     s3.setAdapter(adapter17);
+                    us = 0;
+                    uk = 0;
+                    eu = 1;
+                    cm = 0;
                 }
                 if(position==3 && women==1 && adidas==1){
                     s3.setAdapter(adapter18);
+                    us = 0;
+                    uk = 0;
+                    eu = 0;
+                    cm = 1;
                 }
 
             }
@@ -296,5 +367,9 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+
+
+
     }
+
 }
